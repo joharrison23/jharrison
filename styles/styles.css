@@ -2,6 +2,7 @@ header, nav, main, footer { display: block; }
 /*I based the colors of the website on the background image*/
 body { background-image: url(../images/jungle.jpeg);
        background-size: 120em;
+	   min-width: 120em;
        /*background-color: #401a03;*/
        font-family: Verdana, Arial, sans-serif;
 }
