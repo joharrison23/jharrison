@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!---This code is for a project, please don't sue me if I used an image I wasn't supposed to-->
+  <title>Your Business </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Description of page content">
+
+  <link href="styles/styles.css" rel="stylesheet">
+  <link href="styles/reserve.css" rel="stylesheet">
+  <link href="styles/adjust.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="wrapper">
+  <header>
+      <h1>The Mesozoic Motel</h1>
+  </header>
+  <nav>
+    <!--I added another link, and will probably add more just to flesh out the website-->
+    <ul class="mainmenu">
+        <li><a href="index.html">Home</a></li>
+	      <li><a href="rooms/basic_room.html">Basic Room</a></li>
+	      <li><a href="rooms/budget_room.html">Budget Room</a></li>
+        <li><a href="rooms/sauropod_suite.html">Sauropod Suite</a></li>
+	      <li><a href="events/dino_dining.html">Dino Dining</a></li>
+        <li><a href="events/giga_giftshop.html">Giga-Giftshop</a></li>
+        <li><a href="events/hotel_events.html">Hotel Events</a></li>
+        <li><a href="events/local_attractions.html">Local Attractions</a></li>
+	      <li><a href="contact.html">Contact</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+  </nav>
+ <main>
+    <h2> Reservations </h2>
+ 
+            <div class="formRow">            
+               <label for="name">Name*</label>
+               <input name="custName" id="name" type="text" placeholder="name" required>
+            </div>
+
+            <div class="formRow"> 
+               <label for="phone">Phone number</label>
+               <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+                      pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" >
+            </div>
+
+            <div class="formRow"> 
+               <label for="mail">E-mail*</label>
+               <input name="custEmail" id="mail" type="email" required >
+            </div>
+            
+ 
+            
+            <div class="formRow">
+               <label for="#guests">Number of guests*</label>
+               <input name="#guests" id="#guests" type="number" 
+                      value="1" step="1" min="0" max="20" required>
+            </div>        
+         
+         <fieldset id="expInfo">
+            <legend>Reservation Details</legend>
+            
+            <div class="formRow">
+               <label for="visit">Check In Date*</label>
+               <input name="visitDate" id="visit" type="date" >
+            </div>
+
+            <div class="formRow">
+               <label for="leave">Check Out Date*</label>
+               <input name="leaveDate" id="leave" type="date" >
+            </div>
+            
+            <div class="formRow">
+               <label for="order">Select Room*</label>
+               <select name="orderType" id="order">
+                  <option value="basicroom">Basic Room</option>
+                  <option value="budgetroom">Budget Room</option>
+                  <option value="sauropodsuite">Sauropod Suite</option>
+               </select>
+            </div> 
+            
+            <div class="formRow">
+               <label>Do you like the Dinosaurs?</label>
+               <fieldset class="optGroup">
+                  <label for="hYes">Yes</label>
+                  <input name="likedinos" id="dYes" value="yes" type="radio" required>
+                  <label for="dNo">No</label>
+                  <input name="likedinos" id="dNo" value="no" type="radio" >
+               </fieldset>
+            </div>         
+            
+            <label for="commBox">Special Requests</label>
+            <textarea name="custExp" id="commBox"></textarea>            
+            
+         </fieldset>
+
+            <div class="formRow">
+               <label>Breakfast - $30/person/day</label>
+               <fieldset class="optGroup">
+                  <label for="bYes">Yes</label>
+                  <input name="breakfast" id="bYes" value="yes" type="radio" >
+                  <label for="bNo">No</label>
+                  <input name="breakfast" id="bNo" value="no" type="radio" >
+               </fieldset>
+            </div>    
+
+            <div class="formRow">
+               <label>Dinosaur Plushies - $40</label>
+               <fieldset class="optGroup">
+                  <label for="pYes">Yes</label>
+                  <input name="plushies" id="pYes" value="yes" type="radio" >
+                  <label for="pNo">No</label>
+                  <input name="plushies" id="pNo" value="no" type="radio" >
+               </fieldset>
+            </div>    
+
+            <div class="formRow">
+               <label>Parking - $20/night</label>
+               <fieldset class="optGroup">
+                  <label for="hYes">Yes</label>
+                  <input name="foodHot" id="hYes" value="yes" type="radio" >
+                  <label for="hNo">No</label>
+                  <input name="foodHot" id="hNo" value="no" type="radio" >
+               </fieldset>
+            </div>    
+
+
+         <div id="buttons">
+            <input type="submit" value="Submit My Survey" >
+            <input type="reset" value="Cancel" >
+         </div>         
+
+
+
+  </main>
+<footer>
+
+  Copyright &copy; 2026<br>
+
+  <a href="mailto:joharrison@amarillocollege.com">Justin Harrison</a>
+
+</footer>
+</div>
+</body>
+</html>
